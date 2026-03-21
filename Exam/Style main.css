@@ -79,3 +79,78 @@ h4{
     text-transform: capitalize;
 }
 /*----------------------- MAIN ------------------------*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 814px;
+    background: #EFF0F3;
+}
+main div{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 664px;
+    height: 345px;
+    margin: 271px 116px 284px 95px;
+}
+main img{
+    width: 470px;
+    height: 387px;
+    padding: 13px 18px 11px 18px;
+}
+main h1{
+    width: 617px;
+    color: #2B2C34;
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+main ul li{
+    width: 652px;
+    color: #9A9494;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+main ul li::before{
+    content: "";
+    display: inline-block;
+    background-image: url("Icons/line.png");
+    width: 3px;
+    height: 56px;
+    position: absolute;
+    left: 95px;
+}
+#form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#form input[type="email"]{
+    height: 67px;
+    width: 444px;
+    padding: 21px 200px 21px 25px;
+    border-radius: 8px;
+    background: #FFFFFE;
+    border: none;
+    color: #C0C0C0;
+    font-size: 20px;
+    font-weight: 400;
+}
+#form input[type="submit"]{
+    height: 67px;
+    width: 145px;
+    padding: 20px 23px 19px 23px;
+    border-radius: 8px;
+    background: #6246EA;
+    border: none;
+    color: #FFFFFE;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
