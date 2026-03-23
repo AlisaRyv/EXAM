@@ -107,16 +107,29 @@ main img{
 }
 main h1{
     width: 617px;
+    height: 162px;
     color: #2B2C34;
     font-size: 64px;
     font-weight: 700;
     text-transform: capitalize;
 }
-main ul li{
+main ul{
+    position: relative;
+    margin-left: 12px;
     width: 652px;
+    height: 50px;
     color: #9A9494;
     font-size: 20px;
     font-weight: 400;
+}
+main ul li::before{
+    content: "";
+    position: absolute;
+    background-image: url("Icons/line.png");
+    width: 3px;
+    height: 56px;
+    left: -12px;
+    background-size: cover;
 }
 #form{
     display: flex;
@@ -125,8 +138,8 @@ main ul li{
     width: 609px;
     height: 67px;
 }
-#form input[type="email"]{
-    height: 67px;
+#form input[type="email"], #form input[type="email"]::placeholder{
+    height: 100%;
     width: 444px;
     padding: 21px 200px 21px 25px;
     border-radius: 8px;
@@ -137,7 +150,7 @@ main ul li{
     font-weight: 400;
 }
 #form input[type="submit"]{
-    height: 67px;
+    height: 100%;
     width: 145px;
     padding: 20px 23px 19px 23px;
     border-radius: 8px;
