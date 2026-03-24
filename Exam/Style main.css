@@ -166,10 +166,7 @@ main p::before{
     width: 100%;
     height: 500px;
     background: #EFF0F3;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 67px;
 }
 .section_browse{
     display: flex;
@@ -181,23 +178,23 @@ main p::before{
     height: 365px;
     margin: 0 auto;
 }
-.section_browse div{
+.section_browse .category{
     display: flex;
     width: 100%;
     height: 35px;
     padding: 2px 0 3px 0;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 814px;
 }
-.section_browse div h4{
+.section_browse .category h4{
     color: #2B2C34;
     font-size: 24px;
     width: 251px;
     font-weight: 700;
     text-transform: capitalize;
 }
-.section_browse div a{
+.section_browse .category a{
     color: #2B2C34;
     width: 162px;
     text-align: right;
@@ -206,7 +203,7 @@ main p::before{
     text-transform: capitalize;
     position: relative;
 }
-.section_browse div a::after{
+.section_browse .category a::after{
     content: "";
     background-image: url("Icons/arrow.png");
     width: 6px;
@@ -215,4 +212,50 @@ main p::before{
     position: absolute;
     top: 8px;
     right: -16px;
+}
+.cards{
+    width: 1248px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 37px;
+}
+.card{
+    width: 220px;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 4px 6px 13px 0 rgba(113, 113, 113, 0.25);
+    background: #FFFFFE;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.icon{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 30px;
+    height: 120px;
+}
+.icon img{
+    width: 60px;
+    height: 60px;
+    border-radius: 7.5px;
+    background: #FFFFFE;
+}
+.icon h5{
+    color: #2B2C34;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    height: 30px;
+}
+.card:hover, .card:hover h5{
+    background: #6246EA;
+    color: #FFFFFE;
+    cursor: pointer;
 }
