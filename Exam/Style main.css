@@ -259,3 +259,20 @@ main p::before{
     color: #FFFFFE;
     cursor: pointer;
 }
+/*----------------------- SECTION_POST ----------------------------*/
+.post{
+    width: 100%;
+    height: 2418px;
+    padding-top: 80px;
+    background: #FFFFFE;
+}
+.section_post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 0 auto;
+    width: 1252px;
+    height: 2344px;
+}
