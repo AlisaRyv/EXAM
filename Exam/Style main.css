@@ -398,3 +398,9 @@ main p::before{
     font-size: 20px;
     font-weight: 400;
 }
+/*------------------------ FOOTER -----------------------------------*/
+footer{
+    width: 100%;
+    height: 435px;
+    background: #EFF0F3;
+}
